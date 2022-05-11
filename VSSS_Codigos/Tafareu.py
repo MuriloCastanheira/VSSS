@@ -17,15 +17,18 @@ while True:
     if -Tafareu[0]+0.72 < 0.09:
         
         if (Tafareu[2] + 0.1 > 1.5 and Tafareu[2] - 0.1  < 1.5):
+            if Tafareu[1]+0.01 > Bola[1] and Tafareu[1]-0.01 < Bola[1]:
+                FIRALib.movimente(0,True,0,0)
 
-            if Tafareu[1]> Bola[1]:
-                FIRALib.movimente(0,True,-27,-27)
-            if Tafareu[1]< Bola[1]:
-                FIRALib.movimente(0,True,27,27)
-            if (Tafareu[1]+0.61)< 0.4:
-                FIRALib.movimente(0,True,27,27)
-            if Tafareu[1]+0.61> 0.80:
-                FIRALib.movimente(0,True,-27,-27)
+            else:
+                if Tafareu[1]> Bola[1]:
+                    FIRALib.movimente(0,True,-27,-27)
+                if Tafareu[1]< Bola[1]:
+                    FIRALib.movimente(0,True,27,27)
+                if (Tafareu[1]+0.61)< 0.4:
+                    FIRALib.movimente(0,True,27,27)
+                if Tafareu[1]+0.61> 0.80:
+                    FIRALib.movimente(0,True,-27,-27)
 
 
         else:

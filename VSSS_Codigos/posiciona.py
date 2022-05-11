@@ -116,7 +116,7 @@ def SeguiBola(id,team):
                 theta =  math.atan(B/C)
 
 ###########################################################################################################
-        print("THETA: ",theta,"CARRINHO ORIENTAÇÂO: ",PosicaoCarro[2])   
+       # print("THETA: ",theta,"CARRINHO ORIENTAÇÂO: ",PosicaoCarro[2])   
 
         if( PosicaoCarro[2] + 1.55 > theta and PosicaoCarro[2] - 1.55 < theta ):
             if ((PosicaoCarro[2]+0.299) > theta):
